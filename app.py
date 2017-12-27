@@ -14,8 +14,9 @@ def list_store():
     print (results)
     return (jsonify({'result':results[0]}))
 
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=True)
 
 
-app.run(port=5000)
 
 
